@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ededed;
+  }
+  
+  .menu-button {
+    transition: fill 500ms;
+  }
+  
+  .outer-circle {
+    transform-origin: 60px 60px;
+    transition: transform 2s cubic-bezier(0.62, 0.005, 0, 1.005);
+  }
+  
+  .button {
+    max-width: 12rem;
+    background: none;
+    border: 0 none;
+    font-size: 0;
+    cursor: pointer;
+  }
+  .button svg {
+    width: 100%;
+    height: auto;
+  }
+  .button:hover .menu-button {
+    fill: black;
+  }
+  .button:hover .outer-circle {
+    transform: rotate(360deg);
+  }
